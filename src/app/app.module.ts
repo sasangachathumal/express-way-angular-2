@@ -6,18 +6,24 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { LandingComponent } from './landing/landing.component';
 
 const appRoutes: Routes = [
   {
     path: 'search',
     component: SearchResultComponent
+  },
+  {
+    path: '**',
+    component: LandingComponent
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
