@@ -6,8 +6,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { IndexComponent } from './index/index.component';
 
 const appRoutes: Routes = [
+  {
+    path: '', // routing path
+    component: IndexComponent
+  },
   {
     path: 'search',
     component: SearchResultComponent
@@ -17,7 +22,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,7 @@ const appRoutes: Routes = [
       {
         enableTracing: false
       }
-    ),
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
