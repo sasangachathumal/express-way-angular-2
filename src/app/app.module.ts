@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { IndexComponent } from './index/index.component';
 import { FriendsComponent } from './friends/friends.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   {
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     AppComponent,
     SearchResultComponent,
     IndexComponent,
-    FriendsComponent
+    FriendsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

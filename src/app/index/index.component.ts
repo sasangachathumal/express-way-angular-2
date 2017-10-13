@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { StaticStrings } from '../../statics/static-strings';
-import {Http} from '@angular/http';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -8,12 +6,7 @@ import {Http} from '@angular/http';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent{
-  private strings = StaticStrings;
-  data;
-  constructor(private http: Http) {
-    this.http.get('app/data_files/users.json')
-      .subscribe(res => this.data = res.json());
-    console.log(this.data);
+  constructor() {
   }
 
 }
